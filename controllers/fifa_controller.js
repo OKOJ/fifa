@@ -18,4 +18,11 @@ router.put("/players/update",function(req,res){
     });
 });
 
+router.post("/players/create", function(req,res){
+    player.create(req.body.player_name, function(result){
+        console.log(result);
+        res.redirect("/");
+    })
+})
+
 module.exports = router;

@@ -22,5 +22,25 @@
                 {{/each}}
             </div>
         </div>
+        <div class="col-xs-6  text-center">
+            {{#each player_data}}
+                {{#if this.pick}}
+                <input class="form-control" type="text" placeholder="{{this.id}}. {{this.player_name}}" readonly>
+                {{/if}}
+                {{/each}}
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <form action="/players/create" method="POST">
+            <input type="text" name="player_name" class="form-control"
+            value="" id="enter_text">
+            <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button>
+            </form>
+            <p>Enter Player Name You would like to pick for Your Team</p>
+        </div>
     </div>
 </div>

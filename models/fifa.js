@@ -15,6 +15,9 @@ var player = {
     update: function(id, cb) {
       orm.update("players",id,cb);
     },
+    create: function(name,cb){
+        orm.create("players", name, cb);
+    }
     /*delete: function(condition, cb) {
       orm.delete("cats", condition, function(res) {
         cb(res);
