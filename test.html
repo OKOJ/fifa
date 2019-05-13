@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>FIFA World Cup Dream Team</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="public\assets\img\header.jpg" class="img-fluid" alt="Responsive image">
+
+
+        <div class="col md-12">
+            <div class="row justify-content-md-center">
+                <div class="col md-3">
+                    <h3>Pick Your Players</h3>
+                    <!-- {{#each player_data}} -->
+                    <!-- {{#unless this.pick}} -->
+                    <pre>placeholder
+                            placeholderpele
+                            placeholder
+
+                        </pre>
+                    <form method="POST" action="/players/update?_method=PUT" class="button-size">
+                        <!-- <input type="hidden" name="player_id" value={{this.id}}> -->
+                        <!-- <button type="submit" class="btn btn-default">Pick</button> -->
+                        <button type="button" class="btn btn-light">Pick</button>
+
+                    </form>
+                    <!-- {{/unless}} -->
+                    <!-- {{/each}} -->
+                </div>
+
+                <div class="col md-3">
+                    <h3>Your Team</h3>
+                    <!-- {{#each player_data}}
+                        {{#if this.pick}} -->
+                    <pre>pele
+                            pele
+                        </pre>
+                    <!-- {{!-- <input class="form-control" type="text" placeholder="{{this.id}}. {{this.player_name}}" readonly> --}} 
+                        {{/if}}
+                        {{/each}}-->
+                </div>
+            </div>
+        </div>
+        <br>
+
+            <div class="row">
+                <!-- <div class="col-md-12 text-center"> -->
+                    <h4>Add a Player for Your Pick</h4>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="player_name" value="" id="enter_text"
+                            placeholder="Recipient's username" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit" id="text-enter-button">Add a
+                                Player</button>
+                        </div>
+                    </div>
+                    <!-- <form action="/players/create" method="POST"> 
+                        <input type="text"  class="form-control" name="player_name" value="" id="enter_text"><br>
+                        <button type="button" class="btn btn-outline-dark">Add a Player</button>
+                         <button type="submit" class="btn btn-primary" id="text-enter-button">SUBMIT</button> 
+                    </form>-->
+
+                </div>
+
+            </div>
+
+
+
+
+    
+    <div align="center" style="z-index:9;visibility:visible;"><a href="http://www.totallyfreecursors.com/"
+            target="_blank" class="tfc"></a>
+    </div>
+    <style>
+        HTML,
+        BODY {
+            cursor: url("http://downloads.totallyfreecursors.com/cursor_files/soccerball.cur"), url("http://downloads.totallyfreecursors.com/thumbnails/soccer-ball.gif"), auto;
+        }
+    </style>
+</body>
+
+</html>
