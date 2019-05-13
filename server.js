@@ -7,7 +7,7 @@ var methodOverride = require("method-override");
 var exphdb = require("express-handlebars");
 
 var app = express();
-app.use(express.static("/public"));
+app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({
     extended:false
