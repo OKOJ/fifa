@@ -1,8 +1,10 @@
-<div class="container">
+<div class="main">
     <div class="row">
 
         <div class="col-6">
             <h3>Pick Your Players</h3>
+            <br>
+            <br>
             {{#each player_data}}
             {{#unless this.pick}}
 
@@ -18,6 +20,8 @@
 
         <div class="col-6">
             <h3>Players on Your Team</h3>
+            <br>
+            <br>
             {{#each player_data}}
             {{#if this.pick}}
             <pre>{{this.player_name}}</pre>
@@ -26,6 +30,7 @@
         </div>
 
     </div>
+    <br>
     <br>
 
     <div class="row">
@@ -41,9 +46,15 @@
                     </div>
                 </div>
             </form>
+            <p><a href="https://www.ranker.com/crowdranked-list/the-best-soccer-players-of-all-time?ref=search" target="_blank">Best Soccer
+                Players</a> of all time.</p>
         </div>
+        
+
 
     </div>
+    <br>
+    <br>
 
 </div>
 
